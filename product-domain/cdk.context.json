@@ -1,0 +1,69 @@
+{
+  "vpc-provider:account=781263479187:filter.vpc-id=vpc-0ae0b200ae2caa757:region=eu-west-1:returnAsymmetricSubnets=true": {
+    "vpcId": "vpc-0ae0b200ae2caa757",
+    "vpcCidrBlock": "10.76.137.0/24",
+    "ownerAccountId": "781263479187",
+    "availabilityZones": [],
+    "subnetGroups": [
+      {
+        "name": "Isolated",
+        "type": "Isolated",
+        "subnets": [
+          {
+            "subnetId": "subnet-0a78a111370778fb0",
+            "cidr": "10.76.137.64/27",
+            "availabilityZone": "eu-west-1a",
+            "routeTableId": "rtb-0b4b26d6b83890568"
+          },
+          {
+            "subnetId": "subnet-069b6c82f301e1edc",
+            "cidr": "10.76.137.128/27",
+            "availabilityZone": "eu-west-1a",
+            "routeTableId": "rtb-0b4b26d6b83890568"
+          },
+          {
+            "subnetId": "subnet-0d7474705fbcad9ac",
+            "cidr": "10.76.137.96/27",
+            "availabilityZone": "eu-west-1b",
+            "routeTableId": "rtb-0b4b26d6b83890568"
+          },
+          {
+            "subnetId": "subnet-0c867d14307d9e449",
+            "cidr": "10.76.137.160/27",
+            "availabilityZone": "eu-west-1b",
+            "routeTableId": "rtb-0b4b26d6b83890568"
+          }
+        ]
+      }
+    ]
+  },
+  "vpc-provider:account=260104231753:filter.vpc-id=vpc-0687a77c34ed6389a:region=eu-west-1:returnAsymmetricSubnets=true": {
+    "vpcId": "vpc-0687a77c34ed6389a",
+    "vpcCidrBlock": "10.0.0.0/16",
+    "ownerAccountId": "260104231753",
+    "availabilityZones": [],
+    "subnetGroups": [
+      {
+        "name": "Isolated",
+        "type": "Isolated",
+        "subnets": [
+          {
+            "subnetId": "subnet-070f451a02037c09b",
+            "cidr": "10.0.128.0/20",
+            "availabilityZone": "eu-west-1a",
+            "routeTableId": "rtb-02201888e1f823583"
+          },
+          {
+            "subnetId": "subnet-0e81fda6a357dfbfb",
+            "cidr": "10.0.144.0/20",
+            "availabilityZone": "eu-west-1b",
+            "routeTableId": "rtb-08a2302298c106701"
+          }
+        ]
+      }
+    ]
+  },
+  "ssm:account=781263479187:parameterName=/fdv/arc/vpc:region=eu-west-1": "vpc-0ae0b200ae2caa757",
+  "ssm:account=781263479187:parameterName=/fdv/arc/vpce:region=eu-west-1": "vpce-0739a68412f05b80b",
+  "ssm:account=781263479187:parameterName=/fdv/arc/apigw/eni:region=eu-west-1": "eni-05e0fae5c18fbd194,eni-00adf6f3d43b7a16b"
+}
